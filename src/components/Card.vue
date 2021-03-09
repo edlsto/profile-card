@@ -36,78 +36,73 @@ export default {
 };
 </script>
 
-<style scoped>
-.ctn {
-  width: 22em;
-  border-radius: 1em;
-}
+<style lang="sass" scoped>
+
+$dark-gray: hsl(0, 0%, 59%)
+
+.ctn
+  width: 22em
+  border-radius: 1em
 
 .name,
-.age {
-  margin: 0.3em;
-}
+.age
+  margin: 0.3em
 
-.name {
-  font-weight: bold;
-  font-size: 18px;
-}
+.name
+  font-weight: bold
+  font-size: 18px
 
-.bg {
-  background-image: url("../assets/bg-pattern-card.svg");
-  background-size: contain;
-  height: 8.8rem;
-  border-radius: 1em 1em 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
+.bg
+  background-image: url("../assets/bg-pattern-card.svg")
+  background-size: contain
+  height: 8.8rem
+  border-radius: 1em 1em 0 0
+  display: flex
+  justify-content: center
+  align-items: flex-end
 
-.img {
-  border-radius: 50%;
-  border: 5px solid white;
-  position: relative;
-  top: 58px;
-  width: 106px;
-}
+.img
+  border-radius: 50%
+  border: 5px solid white
+  position: relative
+  top: 58px
+  width: 106px
 
-.white-space {
-  height: 58px;
-}
+.white-space
+  height: 58px
 
-.name-age {
-  display: flex;
-}
+.name-age
+  display: flex
 
-.profile-info {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-}
+.profile-info
+  align-self: stretch
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 1em
 
-.profile-stats {
-  border-top: 1px solid gray;
-  display: flex;
-  justify-content: center;
-  padding: 1em;
-}
+.profile-stats
+  border-top: 1px solid gray
+  display: flex
+  justify-content: center
+  padding: 1em
 
-.stats-label-ctn {
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.label {
-  font-size: 0.8em;
-  letter-spacing: 2px;
-}
+.stats-label-ctn
+  padding: 1em
+  display: flex
+  flex-direction: column
+  align-items: center
 
-.stat {
-  font-weight: 700;
-  font-size: 18px;
-  padding: 0.5em;
-}
+
+.label
+  font-size: 0.8em
+  letter-spacing: 2px
+  color: $dark-gray
+
+
+.stat
+  font-weight: 700
+  font-size: 18px
+  padding: 0.5em
 </style>
