@@ -2,6 +2,7 @@
   <div class="ctn">
     <div class="profile-pic">
       <div class="bg">
+        <!-- <Background class="background" /> -->
         <img src="../assets/image-victor.jpg" alt="" class="img" />
       </div>
       <div class="white-space"></div>
@@ -11,7 +12,7 @@
         <div class="name">Victor Crest</div>
         <div class="age">26</div>
       </div>
-      <div>London</div>
+      <div class="location">London</div>
     </div>
     <div class="profile-stats">
       <div class="stats-label-ctn">
@@ -33,6 +34,7 @@
 <script>
 export default {
   name: "Card",
+  components: {},
 };
 </script>
 
@@ -40,9 +42,13 @@ export default {
 
 $dark-gray: hsl(0, 0%, 59%)
 
+.background
+    position: absolute
+
 .ctn
-  width: 22em
+  width: 350px
   border-radius: 1em
+  background: white
 
 .name,
 .age
@@ -52,14 +58,21 @@ $dark-gray: hsl(0, 0%, 59%)
   font-weight: bold
   font-size: 18px
 
+.age
+    color: $dark-gray
+    margin: 0 1em
+
+.location
+    color: $dark-gray
+    font-size: .9em
+
 .bg
-  background-image: url("../assets/bg-pattern-card.svg")
-  background-size: contain
   height: 8.8rem
   border-radius: 1em 1em 0 0
   display: flex
   justify-content: center
   align-items: flex-end
+  background-image: url("../assets/bg-pattern-card.svg")
 
 .img
   border-radius: 50%
@@ -73,16 +86,18 @@ $dark-gray: hsl(0, 0%, 59%)
 
 .name-age
   display: flex
+  align-items: center
+  margin-bottom: .6em
 
 .profile-info
   align-self: stretch
   display: flex
   flex-direction: column
   align-items: center
-  padding: 1em
+  padding: 1em 2em 1.5em
 
 .profile-stats
-  border-top: 1px solid gray
+  border-top: 1px solid $dark-gray
   display: flex
   justify-content: center
   padding: 1em
@@ -96,13 +111,13 @@ $dark-gray: hsl(0, 0%, 59%)
 
 
 .label
-  font-size: 0.8em
-  letter-spacing: 2px
+  font-size: 0.65em
+  letter-spacing: 1px
   color: $dark-gray
 
 
 .stat
   font-weight: 700
   font-size: 18px
-  padding: 0.5em
+  padding: 0.4em 0.4em
 </style>
